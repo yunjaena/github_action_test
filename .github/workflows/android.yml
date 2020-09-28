@@ -33,10 +33,6 @@ jobs:
     - name: Run Kotlin Linter
       run: ./gradlew ktlintCheck
 
-    # Step 3: Check the code with Android linter
-    - name: Run Android Linter
-      run: ./gradlew lintStagingDebug
-
-    # Step 4: Yun your unit tests
+    # Step 3: Yun your unit tests
     - name: Run Unit Tests
-      run: ./gradlew testStagingDebugUnitTest
+      run: ./gradlew testDebugUnitTest
